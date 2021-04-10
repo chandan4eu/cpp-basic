@@ -1,0 +1,53 @@
+/*switch case */
+/*making a simple calculator using switch case*/
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+char op;
+float num1 , num2 ;
+cout<<"enter two numbers"<<endl;
+
+cin>>num1>>num2;
+
+cout<<"enter the operator which is being done between num1 and num2"<<endl;
+
+cin>>op;
+
+cout<<endl<<num1<<' '<<op<<' '<<num2<<" = ";
+
+
+
+switch(op)
+{
+case '+':
+cout<<num1+num2;
+break;
+case '-':
+cout<<num1-num2;
+break;
+case '*':
+cout<<num1*num2;
+break;
+case '/':
+
+cout<<num1/num2;
+break;
+case '^':
+int z;
+z = 1;
+for(int i = 1 ; i<= num2; i++)
+{
+    z *= num1;
+}
+cout<<z;
+break;
+default:
+cout<<"calcution for this operator will be updated soon";
+}
+
+return 0;
+}

@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int a;
+char b;
+float c;
+bool d;
+
+/* data types are the declearation of varible it determine the type and size of data associated vaiable(vaiable are the container used to store data)*/
+
+
+/*now intialising the data types*/
+
+a=45;
+b='z';
+c=56.6;
+d=4>2;
+
+cout<<a<<endl<<b<<endl<<c<<endl<<d<<endl;
+
+
+cout<<sizeof(a)<<endl;
+cout<<sizeof(b)<<endl;
+cout<<sizeof(c)<<endl;
+cout<<sizeof(d)<<endl;
+
+return 0;
+}
+
+
+
+

@@ -1,0 +1,18 @@
+/*checking weather the number is odd or even*/
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int a;
+
+cout<<"enter a number";
+cin>>a;
+if(a%2==0)
+cout<<"the number\t"<<a<<"\tis even";
+else
+cout<<"the number "<<a<<" is odd";
+
+/*if there is only one statement under the if else condition then there is no need to use curly{} bracet for one line statement*/ 
+return 0;
+}

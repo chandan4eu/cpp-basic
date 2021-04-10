@@ -1,0 +1,25 @@
+/*checking weather the triangle is issoscale , equlateral or scalen*/
+
+#include<iostream>
+using namespace std;
+int main()
+{
+float side_a,side_b,side_c;
+cout<<"enter the side a of triangle";
+cin>>side_a>>side_b>>side_c;
+cout<<"side_a = "<<side_a<<endl<<"side_b = "<<side_b<<endl<<"side_c = "<<side_c<<endl;
+
+if(side_a<= 0 || side_b <= 0 || side_c <=0)
+cout<<endl<<"please enter the valid side(sides of triangle cannot be negetive or zero) ";
+else{
+
+
+if(side_a == side_b && side_b == side_c)
+cout<<"the triangle is equilateral";
+else if(side_a == side_b || side_b == side_c || side_c == side_a)
+cout<<"the triangle is issoscale";
+else
+cout<<"the triangle is scalen";
+}
+return 0;
+}

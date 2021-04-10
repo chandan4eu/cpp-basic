@@ -1,0 +1,45 @@
+/*bit manipulation*/
+
+
+#include<iostream>
+#include<climits>
+using namespace std;
+int getbit(int n , int pos)
+{
+  
+    return (((n) & (1<<pos) ) !=0 );
+
+}
+
+int setbit(int n,int pos){
+    int i= 1<<pos;
+    int num= n || i;
+    return (num||i);
+}
+
+int clearbit(int n,int pos){
+    
+    int z= ~(1<<pos);
+    
+    
+    return (n&z);
+}
+int updatebit(int n, int pos,int value){
+ int i=~(1<<pos);
+ n= n&i;
+ return(n|value);
+ 
+}
+int main()
+{ 
+    int n,pos;
+    cin>>n>>pos;
+    cout<<getbit(n,pos);
+    cout<<endl<<setbit(n,pos)<<endl;
+    cout<<clearbit(n,pos);
+    cout<<endl<<"enter value for updation"<<endl;
+    int val;
+    cin>>val;
+    cout<<endl<<updatebit(n,pos,val);
+    return 0;
+}

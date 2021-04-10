@@ -1,0 +1,53 @@
+/*  function is a block of code that perform specific task.    */
+
+/*
+need of function:-
+
+sometimes while writing code we have to repeat the same code many time, so to overcome that problem function is needed.
+
+defining the function;-
+
+return type function name(parameters).
+
+we can call the function instead of repeating same code.
+
+*/
+/* example :- addition of two number using function */
+
+
+#include<iostream>
+using namespace std;
+
+
+void print(int num1, int num2)
+{
+
+cout<<num1<<" + "<<num2<<" = ";
+return;
+}
+
+
+
+
+int summ(int num1,int num2)
+{
+   print(num1 , num2);
+   int sum=num1+num2;
+ return sum;
+}
+ 
+
+
+
+
+
+int main()
+{
+    cout<<"enter two number which is to be added"<<endl;
+int a,b;
+cin>>a>>b;
+
+cout<<summ(a,b)<<endl;
+
+    return 0;
+}

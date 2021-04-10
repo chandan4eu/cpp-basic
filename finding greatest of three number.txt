@@ -1,0 +1,31 @@
+/*To find the greatest among three numbers*/
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    cout<<"enter three number";
+    int a,b,c;
+    cin>>a>>b>>c;
+    cout<<endl<<"a = "<<a<<endl<<"b = "<<b<<endl<<"c = "<<c<<endl;
+    if(a>b){
+
+        if(a>c)
+        {
+            cout<<a<< "is greatest";
+        }
+        else
+        {
+            cout<<c<<" is greatest";
+        }
+    }
+    else{
+        if(b>c){
+            cout<<b<<" is greatest";
+        }
+        else{
+            cout<<c<<" is greatest";
+        }
+    }
+return 0;
+}

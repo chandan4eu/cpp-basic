@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+
+bool pythagorian_triplet(int m, int n, int p){
+
+int a,b,c;
+a= max(m,max(n,p));
+if(a==m)
+{
+b=n;
+c=p;
+}
+else if(a==n)
+{
+b=m;
+c=p;
+}
+else
+{
+b=m;
+c=n;
+}
+
+
+if(a*a==b*b+c*c)
+return true;
+else
+return false;
+}
+
+int main()
+{
+cout<<"enter three numbers"<<endl;
+int a,b,c;
+cin>>a>>b>>c;
+
+if(pythagorian_triplet(a,b,c)==1)
+cout<<"pythagorian triplet"<<endl;
+else
+cout<<"not a pythagorian triplet"<<endl;
+
+return 0;
+}

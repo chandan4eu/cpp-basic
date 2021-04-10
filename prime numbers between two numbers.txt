@@ -1,0 +1,43 @@
+/*
+
+enter the range
+22
+43
+range = 22 to 43
+prime numbers in the range of 22 and 43 is :-
+23
+29
+31
+37
+41
+43
+
+
+
+
+*/
+
+#include<iostream>
+using namespace std;
+int main()
+{
+cout<<"enter the range"<<endl;
+int n1 , n2,j ;
+cin>>n1>>n2;
+cout<<"range = "<<n1<<" to "<<n2<<endl;
+cout<<"prime numbers in the range of "<<n1<<" and "<<n2<<" is :- "<<endl;
+
+
+for(int i=n1 ; i<= n2 ; i++)
+{
+for( j= 2 ; j< i ; j++)
+{
+if(i%j==0)
+break;
+}
+if(j==i)
+cout<<i<<endl;
+}
+
+return 0;
+}

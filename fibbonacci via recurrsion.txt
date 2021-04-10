@@ -1,0 +1,21 @@
+/* recurrsion = it is a algorithm in which function call itself until a certain condition meet. */
+
+#include<iostream>
+using namespace std;
+
+int fibbonacci(int n){
+    if(n==1 || n==0)
+    return n;
+    
+    return (fibbonacci(n-2)+ fibbonacci(n-1));
+}
+
+
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<fibbonacci(n);
+
+    return 0;
+}

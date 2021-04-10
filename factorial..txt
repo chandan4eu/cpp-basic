@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+cout<<"enter a number whose factorial to be found"<<endl;
+int n,fact;
+fact=1;
+cin>>n;
+cout<<"factorial of "<<n<<" is = ";
+for(int i=1; i<= n ; i++)
+{
+fact=fact*i;
+}
+
+cout<<fact;
+return 0;
+}

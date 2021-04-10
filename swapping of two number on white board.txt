@@ -1,0 +1,30 @@
+#include<iostream>
+ using namespace std;
+
+int main()
+
+{
+/*declaring 3 variable for performing swapping of 2 numbers*/
+
+int a,b,c;
+cout<<"enter the first number";
+cin>>a;
+cout<<"enter the second number";
+cin>>b;
+
+cout<<a<<'\n';
+cout<<b<<'\n';
+
+/*now for swapping ,storing the value of a in b and the value of b in c and the value of c in a*/
+ c = a;
+ a = b;
+ b = c;
+ 
+
+cout<<a<<'\n';
+cout<<b;
+
+return 0;
+}
+
+

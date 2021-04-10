@@ -1,0 +1,40 @@
+/* inroduction to loops */
+// loop is used for executing a block of statement until a certain condition is satisfied.
+// there are mainly 3 types of loop. 1> for loop. 2> while loop. 3> do while loop.
+
+/*introduction to for loop*/
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+/* printing sum of n numbers using for loop */
+int n1,n2,sum;
+cout<<"enter the two number , so that we can calculate the sum of all the numbers between these two number "<<endl;
+cin>>n1>>n2;
+cout<<"n1 = "<<n1<<endl<<"n2 = "<<n2<<endl;
+sum = 0;
+
+if(n1<n2){
+    for(int i = n1; i<=n2 ; i++)
+{
+sum = sum + i;
+}
+
+cout<<"the sum of total numbers between "<<n1<<" and "<<n2<<" is "<<sum;
+}
+
+
+else 
+{
+  for(int i = n1; i>=n2; i--)
+{
+sum = sum + i;
+}
+
+cout<<"the sum of total numbers between "<<n1<<" and "<<n2<<" is "<<sum;  
+}
+
+return 0;
+}

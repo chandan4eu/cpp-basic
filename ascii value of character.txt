@@ -1,0 +1,12 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+cout<<"enter a character"<<endl;
+char c;
+cin>>c;
+cout<<"ascii value of "<<c<<" is "<<int(c)
+
+return 0;
+}

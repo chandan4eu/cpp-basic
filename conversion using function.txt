@@ -1,0 +1,100 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+void decimal_to_binary(int n)
+{
+int rem;
+int step=1;
+int i=1;
+long long num=0;
+while(n>0)
+{
+rem=n%2;
+
+
+cout<<"step "<<step<<"     remainder     "<<rem<<endl;
+num= num + rem*i;
+i=i*10;
+step++;
+
+n=n/2;
+}
+cout<<"binary number is "<<num<<endl;
+return;
+}
+
+
+
+void binary_to_decimal(int n){
+int i=1;
+int step =1;
+int num =0;
+int rem;
+while(n>0){
+rem = n%10;
+num = num + rem*i;
+cout<<"step "<<step<<" remainder "<<rem<<endl;
+i*=2;
+n/=10;
+}
+cout<<"decimal number is "<<num<<endl;
+return;
+}
+
+
+
+void decimal_to_octal(int n){
+int step=1;
+int i=1;
+int num=0;
+int rem;
+while(n>0){
+rem=n%8;
+num = num + rem*i;
+cout<<endl<<"step "<<step<<" remainder "<<rem<<endl;
+i*=10;
+step++;
+n/=8;
+}
+cout<<"octal number is "<<num<<endl;
+return;
+}
+
+void octal_to_decimal(int n){
+    int step=1;
+int i=1;
+int num=0;
+int rem;
+while(n>0){
+    rem=n%10;
+    num+= rem*i;
+    cout<<"step "<<step<<"remainder "<<rem<<endl;
+    i*=8;
+    step++;
+    n/=10;
+}
+cout<<"decimal number is "<<num<<endl;
+    return;
+}
+
+int main()
+{
+cout<<"enter a decimal number"<<endl;
+int n;
+cin>>n;
+decimal_to_binary(n);
+cout<<"enter a binary number"<<endl;
+int m;
+cin>>m;
+binary_to_decimal(m);
+cout<<endl<<"enter a decimal number"<<endl;
+int n1;
+cin>>n1;
+decimal_to_octal(n1);
+cout<<endl<<"enter a octal number"<<endl;
+int r;
+cin>>r;
+octal_to_decimal(r);
+return 0;
+}

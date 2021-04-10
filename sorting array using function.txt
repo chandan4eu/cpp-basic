@@ -1,0 +1,130 @@
+#include<iostream>
+using namespace std;
+
+
+
+/* in selection sort we select the smllest/greatest element and put it to the first for this process
+we uses two loop one for selecting the first element and second for comparing it to with the rest of element
+after comparing we swaps the elements , after completion of both the loop our array is sorted*/
+
+
+
+void SelectionSort(int n,int arr[]){
+    
+    for(int i=0; i<n;i++){
+        for(int j=i+1;j<n; j++){
+            if(arr[i]>arr[j])
+            {
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+    for(int i=0; i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    return ;
+}
+
+
+
+
+
+
+/* in bubble sort we compare the two consecutive element of array , so that the after completion of each loop we get one element sorted
+at the last index of array , so that in the next loop we had to check only to (last-1)th index and so on in next iteration we have to
+check only to (last-2)th index, at last iteration we get our sorted array*/
+
+
+
+
+
+    void BubbleSort(int n,int arr[]){
+        int i=0;
+        int counter=0;
+
+        while(counter<n-i){
+            for(int j=i+1;j<n-i;j++){
+                if(arr[i]>arr[j]){
+                    int temp=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=temp;
+                }
+                }
+            i++;
+            }
+            for(int i=0;i<n;i++){
+                cout<<arr[i]<<" ";
+                
+            }
+     return;
+    }
+
+
+
+
+
+        
+/*in insertion sort , we declare 1st index as sorted array and rest as unsorted array, we compare the element of sorted array
+with unsorted array , after every iteration index of sorted array is icreased by one because one element is being sorted 
+after every iteration,as the element of sorted array becomes greater than one , so for comparing we have to pick one element from unsorted
+array and have to compare it with the each element of sorted array for getting its accurate postion , thats why after comparing from last 
+index of sorted array , we used decrement operator so that we can compare it with other indexes of sorted array and find its accqurate 
+position*/
+
+
+
+
+
+
+void InsertionSort(int n,int arr[]){
+    for(int i=0; i<n;i++){
+       int unsorted= arr[i];
+       int j =i-1;
+       while(arr[j] > arr[i] && j>0){
+           int temp = arr[i];
+           arr[i]=arr[j];
+           arr[j]=arr[i];
+           j--;
+       }
+    
+     }
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+    return; 
+    }
+
+   
+
+    
+
+
+int main()
+{
+    cout<<"enter the size of array"<<endl;
+    int n;
+    cin>>n;
+    int arr[n];
+    cout<<"enter the "<<n<<" element of an array"<<endl;
+    
+    for(int i=0; i<n ; i++)
+    {
+        cin>>arr[i];
+    }
+    for(int i =0 ; i<n; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+cout<<endl<<"selection sort"<<endl;
+SelectionSort(n,arr);
+
+    cout<<endl<<"bubblesort"<<endl;
+    BubbleSort(n,arr);
+
+    cout<<endl<<"InsertionSort "<<endl;
+    InsertionSort(n,arr);
+return 0;
+}

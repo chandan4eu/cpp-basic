@@ -1,0 +1,67 @@
+/*enter the length of a side of dimond/rohmbus
+6
+length = 6
+****** ******
+*****   *****
+****     ****
+***       ***
+**         **
+*           *
+*           *
+**         **
+***       ***
+****     ****
+*****   *****
+****** ******
+
+
+
+*/
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+cout<<"enter the length of a side of dimond/rohmbus"<<endl;
+int length;
+cin>>length;
+cout<<"length = "<<length<<endl;
+for(int i=1; i<= length ; i++)
+{
+for(int j = 1; j<= length-i+1 ; j++)
+{
+cout<<"*";
+}
+for(int k = length-i+1; k<= length+i-1;k++)
+{
+cout<<" ";
+}
+for(int m = length+i; m<= 2*length ; m++)
+{
+cout<<"*";
+}
+cout<<endl;
+}
+
+
+
+for(int i=length; i>=1 ; i--)
+{
+for(int j = 1; j<= length-i+1 ; j++)
+{
+cout<<"*";
+}
+for(int k = length-i+1; k<= length+i-1;k++)
+{
+cout<<" ";
+}
+for(int m = length+i; m<= 2*length ; m++)
+{
+cout<<"*";
+}
+cout<<endl;
+}
+return 0;
+}

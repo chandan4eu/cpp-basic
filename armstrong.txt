@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+cout<<"enter the number to check"<<endl;
+int num,d,check;
+check=0;
+cin>>num;
+int original_num=num;
+cout<<"num = "<<num<<endl;
+while(num>0)
+{
+d=num%10;
+check=check + d*d*d;
+num=num/10;
+}
+if(original_num==check)
+cout<<original_num<<" is an armstrong";
+else
+cout<<original_num<<" is not an armstrong";
+
+return 0;
+}

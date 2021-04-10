@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int sum(int n){
+
+int sum=0;
+for(int i=1; i<= n ; i++)
+{
+sum+=i;
+}
+
+return sum;
+}
+
+int main()
+{
+cout<<"enter the last term "<<endl;
+int last_term;
+cin>>last_term;
+
+cout<<sum(last_term)<<endl;
+
+
+return 0;
+}

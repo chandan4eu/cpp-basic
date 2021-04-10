@@ -1,0 +1,31 @@
+/*To check weather the letter is vowel or consonent*/
+#include<iostream>
+using namespace std;
+
+int main()
+{
+cout<<"enter the letter of alphabet"<<endl;
+char c;
+int islowercasevowel;
+int isuppercasevowel;
+
+cin>>c;
+
+
+ islowercasevowel = ( c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'  );
+ isuppercasevowel =( c == 'A' || c == 'E' ||  c == 'I' || c == 'O' || c == 'U' );
+
+
+if(islowercasevowel || isuppercasevowel){
+    cout<<"the letter "<<c<<" is vowel";
+}
+
+
+else{
+    cout<<"the letter "<<c<<" is consonent";
+}
+
+
+
+return 0;
+}

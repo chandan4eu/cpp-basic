@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+
+void print(int num1, int num2){
+
+cout<<num1<<" + "<<num2<<" = ";
+return;
+}
+int sum(int num1,int num2){
+   print(num1 , num2);
+   int sum=num1+num2;
+ return sum;
+}
+ 
+int main()
+{
+    for(int i = 1 ; i<= 10 ; i++)
+    {
+        cout<<"enter two number which is to be added"<<endl;
+int a,b;
+cin>>a>>b;
+
+cout<<sum(a,b)<<endl;
+if(i==10)
+break;
+
+cout<<"enter next two number for adding"<<endl;
+    }
+    cout<<"please re run the program for more addition"<<endl;
+
+    return 0;
+}

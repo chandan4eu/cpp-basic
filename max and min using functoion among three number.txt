@@ -1,0 +1,63 @@
+#include<iostream>
+using namespace std;
+
+void max(int a,int b,int c){
+if(a>b)
+{
+if(b>c)
+cout<<a;
+else if(a>c)
+cout<<a;
+else
+cout<<c;
+}
+else
+{
+if(b>c)
+cout<<b;
+else
+cout<<c;
+}
+return;
+}
+
+
+
+void min(int a, int b, int c){
+
+if(a<b)
+{
+if(b<c)
+cout<<a;
+else if(a<c)
+cout<<a;
+else
+cout<<c;
+
+}
+else
+{
+if(b<c)
+cout<<b;
+else
+cout<<c;
+}
+return;
+}
+
+
+int main()
+{
+cout<<"enter three numbers"<<endl;
+int a,b,c;
+cin>>a>>b>>c;
+
+cout<<"max of three numbers is = ";
+max(a,b,c);
+
+cout<<endl<<"min of three numbers is = ";
+min(a,b,c);
+
+
+return 0;
+}

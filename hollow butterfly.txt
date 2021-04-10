@@ -1,0 +1,95 @@
+/*
+
+
+
+enter the number of rows in half of the butterfly
+4
+ number of rows in half of butterfly is = 4
+*       *
+**     **
+* *   * *
+*  * *  *
+*  * *  *
+* *   * *
+**     **
+*       *
+
+
+
+
+*/
+
+
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+cout<<"enter the number of rows in half of the butterfly"<<endl;
+int rows;
+cin>>rows;
+cout<<" number of rows in half of butterfly is = "<<rows<<endl;
+
+for(int i = 1; i<=rows; i++)
+{
+    for(int j = 1 ; j<=i ; j++)
+    {
+        if(j==i || j==1)
+        cout<<"*";
+        else
+        {
+            cout<<" ";
+        }
+        
+    }
+for(int k = i; k<=2*rows-i ; k++)
+{
+cout<<" ";
+}
+for(int j = 1 ; j<=i ; j++)
+    {
+        if(j==1 || j==i)
+        cout<<"*";
+        else
+        {
+            cout<<" ";
+        }
+        
+    }
+cout<<endl;
+}
+
+
+for(int i = rows; i>=1; i--)
+{
+    for(int j = 1 ; j<=i ; j++)
+    {
+        if(j==i || j==1)
+        cout<<"*";
+        else
+        {
+            cout<<" ";
+        }
+        
+    }
+for(int k = i; k<=2*rows-i ; k++)
+{
+cout<<" ";
+}
+for(int j = 1 ; j<=i ; j++)
+    {
+        if(j==1 || j==i)
+        cout<<"*";
+        else
+        {
+            cout<<" ";
+        }
+        
+    }
+cout<<endl;
+}
+
+return 0;
+}

@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+void check(char c){
+char lowervowel ,uppervowel;
+ lowervowel =(c == 'a'|| c == 'e'||c == 'i'||c == 'o'||c == 'u');
+ uppervowel =(c == 'A'||c == 'E'||c == 'I'||c == 'O'||c == 'U');
+if(lowervowel || uppervowel)
+{
+cout<<"vowel";
+}
+else
+{
+    cout<<"consonent";
+
+}
+
+
+return;
+}
+
+int main()
+{
+cout<<"enter a character"<<endl;
+char c;
+cin>>c;
+
+
+check(c);
+
+
+return 0;
+}

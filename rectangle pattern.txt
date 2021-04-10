@@ -1,0 +1,30 @@
+/*printing rectangle pattern*/
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+int length,breadth;
+cout<<"enter the length of rectangle/ coulmn of stars "<<endl;
+cin>>length;
+cout<<"length = "<<length<<endl;
+
+cout<<"enter the breadth of rectangle/ rows of star "<<endl;
+cin>>breadth;
+cout<<"breadth = "<<breadth<<endl;
+
+
+for(int i = 1 ; i<= breadth ; i++)
+{
+for(int j = 1 ; j <= length ; j++)
+{
+cout<<"* ";
+}
+cout<<endl;
+}
+
+
+return 0;
+}

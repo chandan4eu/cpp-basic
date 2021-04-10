@@ -1,0 +1,17 @@
+steps to make csv file and fetchinf it in db.
+
+
+open excel make a file and save it as .csv file and export to the destop.
+
+then open db and right click on table 
+
+and then click on import table 
+and select the path of file.
+then next
+
+if you want to create new table then click on create new table
+or else if you don't want to create new table then click on the other option
+then there a window appears where you can check weather columns name were simalar or not 
+if its similar then click on import(this steps will be shown when you have already created a table).
+
+your importation begins.

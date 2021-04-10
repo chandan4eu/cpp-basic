@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+
+void swapping(int m ,int n )
+{
+    int temp;
+temp=n;
+n=m;
+m=temp;
+cout<<"after swapping"<<endl<<"a  = "<<m<<endl<<"b = "<<n;
+
+}
+
+
+int main()
+{
+cout<<"enter two number"<<endl;
+int a,b;
+cin>>a>>b;
+cout<<"a = "<<a<<endl<<"b = "<<b<<endl;
+
+swapping(a,b);
+
+
+return 0;
+}

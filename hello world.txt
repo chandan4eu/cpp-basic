@@ -1,0 +1,24 @@
+#include<iostream>
+/* #include is a pre processor directive which tells the compiler to include the standard header file. here we are including iostream which is necessary for declaration of basic standard input/output in c++*/
+
+
+using namespace std;
+
+/* using name space standard so that we can write the predefined functions without ussing std. ex- std::cout<< to be cout<< */
+
+int main()
+
+/* main() is a predefined function which tells the compiler that the program starts from here. compiltion of program starts from main() function.*/
+
+
+
+{
+
+
+cout<<"hello world";
+
+return 0;
+
+}
+
+
